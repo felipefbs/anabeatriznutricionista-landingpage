@@ -143,8 +143,13 @@ html {
 
 a:focus-visible,
 button:focus-visible {
-  outline: 2px solid var(--amarelo);
-  outline-offset: 2px;
+  outline: 3px solid var(--amarelo);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+*:focus:not(:focus-visible) {
+  outline: none;
 }
 
 .skip-link {
