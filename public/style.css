@@ -1232,7 +1232,8 @@ footer::before {
   .hero-left {
     padding: 100px 10vw;
     text-align: center;
-    max-width: 860px;
+    width: 80%;
+    max-width: none;
     margin: 0 auto;
   }
 
@@ -1244,7 +1245,7 @@ footer::before {
 
   .hero p.subtitle {
     font-size: 17px;
-    max-width: 560px;
+    max-width: 100%;
     margin: 0 auto 48px;
     text-align: center;
   }
@@ -1421,7 +1422,7 @@ footer::before {
 @media (min-width: 1280px) {
   .hero {
     min-height: 100vh;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     align-items: center;
   }
 
@@ -1444,25 +1445,26 @@ footer::before {
   }
 
   .hero-left {
-    padding: 80px 60px 80px 8vw;
-    align-items: flex-start;
-    text-align: left;
+    padding: 80px 60px;
+    align-items: center;
+    text-align: center;
+    width: 80%;
     max-width: none;
-    margin: 0;
+    margin: 0 auto;
   }
 
   .hero h1 {
     font-size: clamp(48px, 4vw, 64px);
     line-height: 1.1;
-    text-align: left;
+    text-align: center;
     margin-bottom: 24px;
   }
 
   .hero p.subtitle {
     font-size: 18px;
-    max-width: 520px;
-    margin: 0 0 40px;
-    text-align: left;
+    max-width: 100%;
+    margin: 0 auto 40px;
+    text-align: center;
     line-height: 1.75;
   }
 
@@ -1498,5 +1500,16 @@ footer::before {
     flex-direction: row;
     font-size: 13px;
     white-space: nowrap;
+  }
+}
+
+@media (min-width: 1600px) {
+  .hero h1 {
+    font-size: clamp(72px, 5vw, 84px);
+  }
+
+  .hero p.subtitle {
+    font-size: 20px;
+    max-width: 100%;
   }
 }
