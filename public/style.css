@@ -225,7 +225,7 @@ body {
   border-radius: 100px;
   text-decoration: none;
   box-shadow: 0 8px 28px rgba(232, 113, 60, 0.5);
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition: transform 0.3s var(--transicao), box-shadow 0.3s var(--transicao), opacity 0.3s var(--transicao), visibility 0.3s var(--transicao);
   display: flex;
   align-items: center;
   gap: 8px;
@@ -261,6 +261,13 @@ body {
 .sticky-cta:hover {
   transform: translateY(-3px);
   box-shadow: 0 14px 36px rgba(232, 113, 60, 0.55);
+}
+
+.sticky-cta--hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  pointer-events: none;
 }
 
 .hero {
