@@ -1190,8 +1190,8 @@ footer::before {
 
   footer {
     flex-direction: row;
-    justify-content: space-between;
-    text-align: left;
+    justify-content: center;
+    text-align: center;
     padding: 36px 48px;
   }
 
